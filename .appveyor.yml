@@ -17,7 +17,7 @@ install:
 # - cmd: pip install zmq
 # Powershell block below is to install the c++ dependencies via vcpkg. The pseudo code is:
 #    a. Checkout the vcpkg source (including port files) for the specific checkout and build the vcpkg binary,
-#    b. Install the missing packages.
+#    b. Install the missing packages
 - ps: |
       $env:PACKAGES = Get-Content -Path build_msvc\vcpkg-packages.txt
       Write-Host "vcpkg installing packages: $env:PACKAGES"
